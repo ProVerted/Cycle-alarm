@@ -1,0 +1,60 @@
+name: cycle_alarm
+description: A cycle-based pattern alarm clock for Android
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Alarm scheduling (native Android AlarmManager)
+  android_alarm_manager_plus: ^4.0.0
+
+  # Local notifications (banner + full-screen intent)
+  flutter_local_notifications: ^17.0.0
+
+  # Local database (fast, no server needed)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # File picker (for user's own audio file)
+  file_picker: ^8.0.0+1
+
+  # Audio playback
+  just_audio: ^0.9.36
+
+  # Vibration
+  vibration: ^3.1.0
+
+  # UUID generation for alarm IDs
+  uuid: ^4.3.3
+
+  # Date formatting
+  intl: ^0.19.0
+
+  # Shared preferences (simple key-value)
+  shared_preferences: ^2.2.2
+
+  device_info_plus: ^10.1.0
+
+  cupertino_icons: ^1.0.6
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.8
+
+flutter:
+  uses-material-design: true
+
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/icon.png"
